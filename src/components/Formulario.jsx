@@ -75,31 +75,31 @@ const Formulario = ({pacientes, setPacientes, paciente, setPaciente}) => {
 
         <p className="text-lg mt-5 text-center mb-10">
           Añade paciente y {''}
-          <span className="text-indigo-600 font-bold">Administralos</span>
+          <span className="text-sky-400 font-bold">Administralos</span>
         </p>
 
         <form onSubmit={handleSubmit} className="bg-white shadow-md rounded-lg py-10 px-5 mb-10 mx-5">
           <div className="mb-5">
-            <label htmlFor="mascota" className="block text-gray-700 uppercase font-bold">
-              Nombre Mascota
+            <label htmlFor="nombre" className="block text-gray-700 uppercase font-bold">
+              Nombre Paciente
             </label>
 
-            <input id="mascota" 
+            <input id="nombre" 
             type="text" 
-            placeholder="Nombre de la Mascota" 
+            placeholder="Nombre del Paciente" 
             className="w-full border-2 mt-2 p-2 placeholder-gray-400 rounded-md"
             value={nombre}
             onChange={ (e) => setNombre(e.target.value) }/>
           </div>
 
           <div className="mb-5">
-            <label htmlFor="propietario" className="block text-gray-700 uppercase font-bold">
-              Nombre Propietario
+            <label htmlFor="apellidos" className="block text-gray-700 uppercase font-bold">
+              Apellidos Paciente
             </label>
 
-            <input id="propietario" 
+            <input id="apellidos" 
             type="text" 
-            placeholder="Nombre del propietario" 
+            placeholder="Apellidos del Paciente" 
             className="w-full border-2 mt-2 p-2 placeholder-gray-400 rounded-md"
             value={propietario}
             onChange={ (e) => setPropietario(e.target.value) }/>
@@ -112,7 +112,7 @@ const Formulario = ({pacientes, setPacientes, paciente, setPaciente}) => {
 
             <input id="email" 
             type="email" 
-            placeholder="Email Contacto Propietario" 
+            placeholder="Email de Contacto" 
             className="w-full border-2 mt-2 p-2 placeholder-gray-400 rounded-md"
             value={email}
             onChange={ (e) => setEmail(e.target.value) }/>
@@ -147,7 +147,7 @@ const Formulario = ({pacientes, setPacientes, paciente, setPaciente}) => {
 
           <input 
             type="submit" 
-            className="bg-indigo-600 w-full p-3 text-white uppercase font-bold hover:bg-indigo-700 cursor-pointer transition-all"
+            className="bg-sky-400 w-full p-3 text-white uppercase font-bold hover:bg-sky-600 cursor-pointer transition-all"
             value={paciente.id ? 'Editar Paciente' : 'Agregar Paciente'}/>
 
         </form>

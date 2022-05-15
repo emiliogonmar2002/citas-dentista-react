@@ -16,7 +16,7 @@ const Paciente = ({paciente, setPaciente, eliminarPaciente}) => {
             <span className="font-normal normal-case">{nombre}</span>
         </p>
 
-        <p className="font-bold mb-3 text-gray-700 uppercase">Propietario: {''}
+        <p className="font-bold mb-3 text-gray-700 uppercase">Apellidos: {''}
             <span className="font-normal normal-case">{propietario}</span>
         </p>
 
@@ -35,7 +35,7 @@ const Paciente = ({paciente, setPaciente, eliminarPaciente}) => {
         <div className="flex justify-between mt-10">
             <button 
                 type="button"
-                className="py-2 px-10 bg-indigo-600 hover:bg-indigo-700 text-white font-bold uppercase rounded-lg transition-all"
+                className="py-2 px-10 bg-sky-400 hover:bg-sky-600 text-white font-bold uppercase rounded-lg transition-all"
                 onClick={() => setPaciente(paciente)}
                 >Editar</button>
             <button 
